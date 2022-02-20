@@ -13,7 +13,8 @@ import io.cucumber.junit.CucumberOptions;
     glue = {"steps"},
     monochrome = false,
     publish = false,
-    tags = "@AddContact"
+    //plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","json:target/cucumber-reports.json"},
+    tags = "@Scenario1"
 )
 
 
