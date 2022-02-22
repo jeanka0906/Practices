@@ -13,8 +13,10 @@ import io.cucumber.junit.CucumberOptions;
     glue = {"steps"},
     monochrome = false,
     publish = false,
-    //plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","json:target/cucumber-reports.json"},
+    plugin = {"html:test-output/HtmlReport/cucumber.html","json:target/cucumber-reports.json","pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     tags = "@Scenario1"
+    //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", 
+    //"html:test-output/HtmlReport/cucumber.html"
 )
 
 

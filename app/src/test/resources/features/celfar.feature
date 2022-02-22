@@ -12,13 +12,13 @@ Feature: Celfar converter page
         Then I will be able to validate the output data <far>
 
         Examples:
-            | cel     | far                                           |
-            | 10      | 50                                            |
-            | -30     | -22                                           |
-            | -273    | -459.4                                        |
-            | -274    | El valor ingresado está debajo del 0 absoluto |
-            | 123456  | 222252.8                                      |
-            | 1234567 | El valor ingresado es muy largo               |
-    
-
-
+            | cel     | far                                                                                                   |
+            | 10      | 50                                                                                                    |
+            | -30     | -22                                                                                                   |
+            | -273    | -459.4                                                                                                |
+            | -274    | El valor ingresado está debajo del 0 absoluto                                                         |
+            | 123456  | 222252.8                                                                                              |
+            | 1234567 | El valor ingresado es muy largo                                                                       |
+            | 21,343  | El valor ingresado no es un número (recuerde que los decimales deben expresarse con '.' y no con ',') |
+            | 32.44   | 90.392                                                                                                |
+   
